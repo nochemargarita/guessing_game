@@ -18,17 +18,21 @@ while guess:
 
     try:
         player_guess = int(player_guess)
-        if player_guess :
-            if player_guess == rand_num:
-                print 'Well done, %s! You found my number in %s tries!' % (player_name, counter)
-                guess = False
-            elif player_guess > rand_num:
-                print 'Your guess is too high, try again.'
-                counter += 1    
-            elif player_guess < rand_num:
-                print 'Your guess is too low, try again.'
-                counter += 1
-            else:
-                print '%s! Check the range please!' % player_name
+
     except:
         print 'We spent an hour creating this message for you: PLEASE ENTER AN INTEGER!'
+
+    if player_guess :
+        if player_guess == rand_num:
+            print 'Well done, %s! You found my number in %s tries!' % (player_name, counter)
+            guess = False
+        elif player_guess > rand_num:
+            print 'Your guess is too high, try again.'
+            counter += 1    
+        elif player_guess < rand_num:
+            print 'Your guess is too low, try again.'
+            counter += 1
+        else:
+            print '%s! Check the range please!' % player_name
+   
+        
