@@ -16,7 +16,7 @@ guess = True
 while guess:
     player_guess = raw_input('Your guess?')
 
-    if int(player_guess):
+    if isinstance(int(player_guess), int):
         player_guess = int(player_guess)
         if player_guess :
             if player_guess == rand_num:
