@@ -16,7 +16,7 @@ guess = True
 while guess:
     player_guess = raw_input('Your guess?')
 
-    if isinstance(int(player_guess), int):
+    try:
         player_guess = int(player_guess)
         if player_guess :
             if player_guess == rand_num:
@@ -30,5 +30,5 @@ while guess:
                 counter += 1
             else:
                 print '%s! Check the range please!' % player_name
-    else:
-        print 'error'
+    except:
+        print 'We spent an hour creating this message for you: PLEASE ENTER AN INTEGER!'
