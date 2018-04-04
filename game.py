@@ -20,7 +20,6 @@ guess = True
     #if yes:
         #
 while guess:
-    
     player_guess = raw_input('Your guess?')
     try:
         player_guess = int(player_guess)
@@ -40,7 +39,6 @@ while guess:
                 print 'Ok, let do it again.'
                 counter = 0
                 rand_num = random.randint(1,100)
-                continue
 
             else:
                 lowest_score = min(lowest_counter)
